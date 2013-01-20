@@ -4,3 +4,6 @@ author: thebiologist13
 authors: [thebiologist13, odogollie]
 main: com.github.blockdefender.BowTag
 description: Play Laser Tag in game! For The Block Defender!
+commands:
+    bowtag:
+	    description: Main command of Plugin.
