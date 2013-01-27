@@ -7,8 +7,12 @@ import java.io.OutputStream;
 import java.util.List;
 import java.util.logging.Logger;
 
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -103,6 +107,17 @@ public class BowTag extends JavaPlugin {
 			config.setDefaults(defConfig);
 		}
 
+	}
+	
+	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
+		Player player = (Player) sender;
+		if(commandLabel.equalsIgnoreCase("bowtag")){
+			player.sendMessage(ChatColor.RED + "Play Bow Tag on The Block Defender!");
+		}
+		
+		
+		return false;
+		
 	}
 	
 	public boolean getDebug() {
