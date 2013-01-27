@@ -11,6 +11,16 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * BowTag Bukkit Plugin. This plugin allows you to play Laser Tag with your 
+ * friends on Bukkit Minecraft servers. Initailly made for The Block Defender
+ * Server.
+ * 
+ * Licensed GNU-GPLv3 
+ * 
+ * @author thebiologist13, odogollie
+ * @version 0.1
+ */
 public class BowTag extends JavaPlugin {
 	
 	private boolean debug; 
